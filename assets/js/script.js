@@ -7,7 +7,6 @@ var themeButton = document.querySelector('.main__rueng');
 if(lang_id === null){
 lang_id = 0;
 }
-alert(lang_id);
 document.getElementById('main__rueng').onclick = changeURLLanguage;
 document.getElementById(lang[lang_id]).classList.add('active-lang');
 
