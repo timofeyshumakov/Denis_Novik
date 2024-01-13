@@ -1,31 +1,39 @@
 <!DOCTYPE HTML>
-<html>
+<html lang="ru">
 <head>
 	<meta charset="UTF-8">
+	<meta name="format-detection" content="telephone=yes">
+	<meta name="robots" content="all">
+	<meta name="keywords" content="ключевые слова">
+	<meta name="description" content="Описание страницы сайта.">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="icon" type="image/x-icon" href="assets/img/logo/logo.png">
 	<link rel="stylesheet" href="../assets/css/style.css">
-	<title>Заголовок страницы</title>
+	<title>Web дизайнер | Денис Новик</title>
 </head>
 <body id = "body">
   <div class="wraper">
     <header class="header"> 
 		<div class="header__container">
-			<nav class="header__menu" >
+
+			<nav class="header__menu">
+				<input type="checkbox" id="burger-checkbox" class="burger-checkbox">
+				<label for="burger-checkbox" class="burger" aria-label="Открыть меню" tabindex="0"></label>
 				<ul class="menu-list">
 					<li class="menu-item">
-						<a data-link="home" class="menu-link black">Главная</a>
+						<a data-link="home" class="menu-link black" tabindex="0" aria-label="Перейти на главную">Главная</a>
 					</li>
 					<li class="menu-item">
-						<a data-link="about" class="menu-link">Обо мне</a>
+						<a data-link="about" class="menu-link" tabindex="0" aria-label="Перейти к информации обо мне">Обо мне</a>
 					</li>
 					<li class="menu-item">
-						<a data-link="skills" class="menu-link">Навыки</a>
+						<a data-link="skills" class="menu-link" tabindex="0" aria-label="Перейти на раздел навыков">Навыки</a>
 					</li>
 					<li class="menu-item">
-						<a data-link="portfolio" class="menu-link">Портфолио</a>
+						<a data-link="portfolio" class="menu-link" tabindex="0" aria-label="Перейти к портфолио">Портфолио</a>
 					</li>
 					<li class="menu-item">
-						<a data-link="contacts" class="menu-link">Контакты</a>
+						<a data-link="contacts" class="menu-link" tabindex="0" aria-label="Перейти к контактам">Контакты</a>
 					</li>
 				</ul>
 			</nav>
@@ -35,33 +43,33 @@
     <main class="main">
     	<section class="main">
 			<div class="main__container">
-				<div class="main__headder" id="home">Денис<p>Новик</p></div>
-				<div class="main__text">UX | UI дизайнер<p>24 года, Минск</p></div>
-				<div class="main__rueng" id="main__rueng">
-					<span class="ru" id="ru">RU</span>
-					<span class="lang-delimiter"> | </span>
-					<span class="en" id="en">ENG</span>
+				<div class="main__info">
+					<h1 class="main__header" id="home" tabindex="0">Денис Новик</h1>
+					<h3 class="main__text" tabindex="0">UX | UI дизайнер 24 года, Минск</h3>
+					<div class="main__rueng" id="main__rueng" aria-label="Сменить язык" tabindex="0">
+						<span class="ru" id="ru" aria-label="Сменить язык на русский" tabindex="0">RU</span>
+						<span class="lang-delimiter"> | </span>
+						<span class="en" id="en" aria-label="Сменить язык на английский" tabindex="0">ENG</span>
+					</div>
 				</div>
-			</div>
-			<div class="main__mainphoto__container">
 				<div class="main__mainphoto">
 					<img class="img-to-zoom" src="../assets/img/mainphoto.jpg" alt="главное изображение" width="100%" id="img1" title="главное изображение" loading="lazy" itemprop="image" role="img" tabindex="0">
 				</div>
 			</div>
 		</section>
 		<section class="about" id="about">
-			<div class="about__container">
-				<div class="about__headder">Обо мне</div>
-					<div class="about__text">
-						<div class="about__txt"><p>Привет, я Денис — UX/UI дизайнер из Минска.</p><p>Интересуюсь дизайном и всем, что с ним связано.</p></div>
-						<div class="about__txt"><p>Я учусь на курсах «Веб и мобильный дизайн».</p><p>интерфейсы» в IT-Академии.</p></div>
-						<div class="about__txt"><p>Готов реализовать отличные проекты</p><p></p>с замечательными людьми.</p></div>
+			<div class="about__container" tabindex="0">
+				<h2 class="about__headder">Обо мне</h2>
+					<div class="about__text text">
+						<div class="about__txt">Привет, я Денис — UX/UI дизайнер из Минска. Интересуюсь дизайном и всем, что с ним связано.</div>
+						<div class="about__txt">Я учусь на курсах «Веб и мобильный дизайн». интерфейсы» в IT-Академии.</div>
+						<div class="about__txt">Готов реализовать отличные проекты с замечательными людьми.</div>
 					</div>
 			</div>
 		</section>
 		<section class="skills" id="skills">
-			<div class="skills__container">
-				<div class="skills__headder">Навыки</div>
+			<div class="skills__container" tabindex="0">
+				<h2 class="skills__headder">Навыки</h2>
 				<div class="skills__text">Я работаю в таких программах как</div>
 				<div class="skills__programms">
 					<div class="skills__card">
@@ -69,8 +77,8 @@
 							<img src="../assets/img/scills/scills1.svg" alt="Adobe Photoshop" title="Adobe Photoshop" loading="lazy" itemprop="image" role="img" tabindex="0">
 						</div>
 						<div class="skills__programms-text">
-							<p class="skills__programms-paragraph">Adobe</p>
-							<p class="skills__programms-paragraph">Photoshop</p>
+							<p>Adobe</p>
+							<p>Photoshop</p>
 						</div>
 						<div class="skills__stars">
 							<img src="../assets/img/scills/stars-black.svg" alt="черная звезда">
@@ -85,8 +93,8 @@
 							<img src="../assets/img/scills/scills2.svg" alt="Adobe Illustrator" title="Adobe Illustrator" loading="lazy" itemprop="image" role="img" tabindex="0">
 						</div>
 						<div class="skills__programms-text">
-							<p class="skills__programms-paragraph">Adobe</p>
-							<p class="skills__programms-paragraph">Illustrator</p>
+							<p>Adobe</p>
+							<p>Illustrator</p>
 						</div>
 						<div class="skills__stars">
 							<img src="../assets/img/scills/stars-black.svg" alt="черная звезда">
@@ -101,8 +109,8 @@
 							<img src="../assets/img/scills/scills3.svg" alt="Adobe After Effects" title="Adobe After Effects" loading="lazy" itemprop="image" role="img" tabindex="0">
 						</div>
 						<div class="skills__programms-text">
-							<p class="skills__programms-paragraph">Adobe</p>
-							<p class="skills__programms-paragraph">After Effects</p>
+							<p>Adobe</p>
+							<p>After Effects</p>
 						</div>
 						<div class="skills__stars">
 							<img src="../assets/img/scills/stars-black.svg" alt="черная звезда">
@@ -117,7 +125,7 @@
 							<img src="../assets/img/scills/scills4.svg" alt="Figma" title="Figma" loading="lazy" itemprop="image" role="img" tabindex="0">
 						</div>
 						<div class="skills__programms-text">
-							<p class="skills__programms-paragraph">Figma</p>
+							<p>Figma</p>
 						</div>
 						<div class="skills__stars">
 							<img src="../assets/img/scills/stars-black.svg" alt="черная звезда">
@@ -132,7 +140,7 @@
 		</section>
 		<section class="portfolio" id="portfolio">
 			<div class="portfolio__container">
-				<div class="portfolio__headder">Портфолио</div>
+				<h2 class="portfolio__headder">Портфолио</h2>
 				<div class="portfolio__photo">
 					<img class="img-to-zoom" src="../assets/img/portfolio/portfolio1.jpg" alt="Online fashion store - главная страница" width="100%" title="Online fashion store - главная страница" loading="lazy" itemprop="image" role="img" tabindex="0">
 				</div>
@@ -154,9 +162,9 @@
 	</main>
 	<footer class="footer">
 		<div class="footer__container">
-			<div class="footer__contacts" id="contacts">Контакты</div>
-			<div class="footer__text">Хотите узнать больше или просто пообщаться?<p>Пожалуйста!</p></div>
-			<button class="footer__button"><a href="mailto:DenisNovik@mail.ru?subject=Вопрос&body=Здравствуйте, сколько стоят ваши услуги?" target="_blank">Отправить сообщение</a></button>
+			<h2 class="footer__contacts" id="contacts">Контакты</h2>
+			<div class="footer__text text">Хотите узнать больше или просто пообщаться? Пожалуйста!</div>
+			<button class="footer__button" aria-label="Отправить сообщение"><a href="mailto:DenisNovik@mail.ru?subject=Вопрос&body=Здравствуйте, сколько стоят ваши услуги?" target="_blank">Отправить сообщение</a></button>
 		<div class="footer__media">
 			<div class="footer__mediaitem">
 				<a href="https://linkedin.com/DenisNovik" target="_blank">
@@ -179,9 +187,9 @@
 				</a>
 			</div>
 		</div>
-		<div class="footer__mediatext">Я есть в таких соц сетях как<p>LinkedIn, Instagram, Behance, Dribble</p></div>
+		<div class="footer__mediatext">Я есть в таких соц сетях как LinkedIn, Instagram, Behance, Dribble</div>
 	</footer>
 </div>
-<script src="../assets/js/script.js"></script>
 </body>
+<script src="../assets/js/script.js"></script>
 </html>

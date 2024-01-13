@@ -11,22 +11,23 @@ document.getElementById('main__rueng').onclick = changeURLLanguage;
 document.getElementById(lang[lang_id]).classList.add('active-lang');
 
 function changeURLLanguage() {
-lang_id++;
-if(lang_id>=lang.length){
+    pr_lang_id = lang_id;
+if(event.target.id === 'ru'){
+    lang_id = 1;
+}else{
     lang_id = 0;
 }
 localStorage.setItem("lang_id", lang_id);
-if(lang_id === 0){
-
-    document.location.href = document.location.href.replace('/' + lang[lang_id+1],"")
-}else{
-    host_len = '/index.html'.length;
-    pathname_len = window.location.pathname.length;
-    document.location.href = window.location.pathname.substring(0, pathname_len - host_len) + '/' + lang[lang_id] + '/index.html'
+    if(pr_lang_id != lang_id){
+    if(lang_id === 0){
+        document.location.href = document.location.href.replace('/' + lang[lang_id+1],"")
+    }else{
+        host_len = '/index.html'.length;
+        pathname_len = window.location.pathname.length;
+        document.location.href = window.location.pathname.substring(0, pathname_len - host_len) + '/' + lang[lang_id] + '/index.html'
+    }
 }
 }
-}
-
 var img = document.querySelectorAll('.img-to-zoom');
 img.forEach(item => {
     item.addEventListener('click', imgClickHandler)
@@ -44,3 +45,5 @@ links.forEach(item => {
 function linkClickHandler(){
     document.getElementById(this.getAttribute('data-link')).scrollIntoView({behavior: "smooth" });
 }
+}
+
