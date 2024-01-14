@@ -3,7 +3,9 @@ var lang = ['en','ru'];
 var lang_id = localStorage.getItem("lang_id");
 var host_len = 0;
 var themeButton = document.querySelector('.main__rueng');
+var different_directories = false;
 
+if(different_directories = true){
 if(lang_id === null){
 lang_id = 0;
 }
@@ -28,6 +30,9 @@ localStorage.setItem("lang_id", lang_id);
     }
 }
 }
+}
+
+
 var img = document.querySelectorAll('.img-to-zoom');
 img.forEach(item => {
     item.addEventListener('click', imgClickHandler)
