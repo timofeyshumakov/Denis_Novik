@@ -4,10 +4,10 @@
 	<meta charset="UTF-8">
 	<meta name="format-detection" content="telephone=yes">
 	<meta name="robots" content="all">
-	<meta name="keywords" content="ключевые слова">
-	<meta name="description" content="Описание страницы сайта.">
+	<meta name="keywords" content="web дизайнер, веб дизайнер минск, создание сайтов, графический дизайн, адаптивный дизайн, UX/UI дизайн, разработка логотипов">
+	<meta name="description" content="Привет! Я - web дизайнер из Минска с опытом в создании качественных и современных сайтов. Моя специализация включает веб-разработку, графический дизайн, адаптивный дизайн, UX/UI дизайн, разработку логотипов и оптимизацию сайтов для поисковых систем. Я предлагаю индивидуальный подход к каждому проекту, чтобы создать уникальный и привлекательный веб-сайт, который будет соответствовать вашим требованиям и потребностям. Если вы ищете профессионального веб дизайнера в Минске, обращайтесь ко мне!">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<link rel="icon" type="image/x-icon" href="assets/img/logo/logo.png">
+	<link rel="icon" type="image/x-icon" href="assets/img/icon.png">
 	<link rel="stylesheet" href="assets/css/style.css">
 	<title>Web дизайнер | Денис Новик</title>
 </head>
@@ -19,6 +19,11 @@
 			<nav class="header__menu">
 				<input type="checkbox" id="burger-checkbox" class="burger-checkbox">
 				<label for="burger-checkbox" class="burger" aria-label="Открыть меню" tabindex="0"></label>
+				<div class="main__rueng" id="main__rueng-mobile" aria-label="Change language" tabindex="0">
+					<span class="ru active-lang" id="ru" aria-label="Change language to Russian" tabindex="0">RU</span>
+					<span class="lang-delimiter"> | </span>
+					<span class="en" id="en" aria-label="Change language to English" tabindex="0"><a href="index.html">ENG</a></span>
+				</div>
 				<ul class="menu-list">
 					<li class="menu-item">
 						<a data-link="home" class="menu-link black" tabindex="0" aria-label="Перейти на главную">Главная</a>
@@ -47,13 +52,18 @@
 					<h1 class="main__header" id="home" tabindex="0"><p>Денис</p><p>Новик</p></h1>
 					<h3 class="main__text" tabindex="0"><p>UX | UI дизайнер</p><p>24 года, Минск</p></h3>
 					<div class="main__rueng" id="main__rueng" aria-label="Сменить язык" tabindex="0">
-						<span class="ru" id="ru" aria-label="Сменить язык на русский" tabindex="0">RU</span>
+						<span class="ru active-lang" id="ru" aria-label="Сменить язык на русский" tabindex="0">RU</span>
 						<span class="lang-delimiter"> | </span>
-						<span class="en" id="en" aria-label="Сменить язык на английский" tabindex="0">ENG</span>
+						<span class="en" id="en" aria-label="Сменить язык на английский" tabindex="0"><a href="index.html">ENG</a></span>
 					</div>
 				</div>
 				<div class="main__mainphoto">
-					<img class="img-to-zoom" src="assets/img/mainphoto.jpg" alt="главное изображение" width="100%" id="img1" title="главное изображение" loading="lazy" itemprop="image" role="img" tabindex="0">
+					<picture>
+						<source media="(max-width: 768.98px)" srcset="assets/img/main-photo/main-photo-mobile.webp" type="image/webp">
+						<source srcset="assets/img/main-photo/main-photo.webp" type="image/webp">
+						<source media="(max-width: 768.98px)" srcset="assets/img/main-photo/main-photo-mobile.jpg">
+						<img class="img-to-zoom" src="assets/img/main-photo/main-photo.jpg" alt="Изображение web дизайнера" width="100%" id="img1" title="Изображение web дизайнера" loading="lazy" itemprop="image" role="img" tabindex="0">
+					</picture>
 				</div>
 			</div>
 		</section>
@@ -142,18 +152,27 @@
 			<div class="portfolio__container">
 				<h2 class="portfolio__headder">Портфолио</h2>
 				<div class="portfolio__photo">
-					<img class="img-to-zoom" src="assets/img/portfolio/portfolio1.jpg" alt="Online fashion store - главная страница" width="100%" title="Online fashion store - главная страница" loading="lazy" itemprop="image" role="img" tabindex="0">
+					<picture>
+						<source srcset="assets/img/portfolio/portfolio1.webp" type="image/webp">
+						<img class="img-to-zoom" src="assets/img/portfolio/portfolio1.jpg" alt="Online fashion store - главная страница" width="100%" title="Online fashion store - главная страница" loading="lazy" itemprop="image" role="img" tabindex="0">
+					<picture>
 				</div>
 				<div class="portfolio__text">
 					<a target="_blank" href="https://www.online-fashion.ru/">Online fashion store - главная страница</a>
 				</div>
 				<div class="portfolio__photo">
-					<img class="img-to-zoom" src="assets/img/portfolio/portfolio2.jpg" alt="Reebok Store - концепт" width="100%" title="Reebok Store - концепт" loading="lazy" itemprop="image" role="img" tabindex="0"></div>
+					<picture>
+						<source srcset="assets/img/portfolio/portfolio2.webp" type="image/webp">
+						<img class="img-to-zoom" src="assets/img/portfolio/portfolio2.jpg" alt="Reebok Store - концепт" width="100%" title="Reebok Store - концепт" loading="lazy" itemprop="image" role="img" tabindex="0"></div>
+					</picture>
 				<div class="portfolio__text">
 					<a target="_blank" href="https://www.reebok.ru/">Reebok Store - концепт</a>
 				</div>
 				<div class="portfolio__photo">
+				<picture>
+					<source srcset="assets/img/portfolio/portfolio3.webp" type="image/webp">
 					<img class="img-to-zoom" src="assets/img/portfolio/portfolio3.jpg" alt="Braun Landing Page концепт" width="100%" title="Braun Landing Page концепт" loading="lazy" itemprop="image" role="img" tabindex="0"></div>
+				</picture>
 				<div class="portfolio__text">
 					<a target="_blank" href="https://braun-russia.ru/" >Braun Landing Page - концепт</a>
 				</div>
@@ -172,7 +191,7 @@
 				</a>
 			</div>
 			<div class="footer__mediaitem">
-				<a href="https://instagramm.com/DenisNovik" target="_blank">
+				<a href="https://instagram.com/DenisNovik" target="_blank">
 					<img src="assets/img/social/social2.svg" alt="Instagram">
 				</a>
 			</div>
