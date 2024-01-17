@@ -27,7 +27,7 @@ input::-ms-clear{display: none;}
 button{cursor: pointer;}
 button::-moz-focus-inner {padding:0;border:0;}
 a, a:visited{text-decoration: none;}
-a:hover{text-decoration: none;}
+a:hover{text-decoration: none;cursor: pointer;}
 ul li{list-style: none;}
 img{cursor: pointer;vertical-align: top;}
 
@@ -192,15 +192,13 @@ font-size: 18px;
 line-height: 22px;
 text-align: center;
 color: #070707;
-padding: 70px 0 0 0;
+padding-top: 70px;
 }
 
 a{
 	color: #070707;
 }
-a:hover{
-cursor: pointer;
-}
+
 .skills__stars{
 display: flex;
 gap: 0.5rem;
@@ -300,7 +298,7 @@ margin-bottom: 5.5rem;
 	width: 300px;
 }
 
-.footer__mediatext {
+.footer__media-text {
 	font-family: 'Gilroy-Medium';
 font-size: 0.9rem;
 line-height: 1.1rem;

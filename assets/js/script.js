@@ -1,9 +1,7 @@
 window.onload = function(){
 var lang = ['en','ru'];
 var lang_id = localStorage.getItem("lang_id");
-var host_len = 0;
 var different_directories = false;
-var dir = '/';
 
 if(different_directories === true){
 if(lang_id === null){
