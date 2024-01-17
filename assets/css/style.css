@@ -12,24 +12,9 @@
 a:focus,a:active{outline: none;}
 
 nav,footer,header,aside{display: block;}
-img{
-	cursor: pointer;
-}
-.scroll-lock{
-	overflow: hidden;
-}
-.zoom-img{
-    position: absolute;
-    left: 0;
-    width: 100vw;
-    height: 100vh;
-    padding: 5%;
-    background: rgba(0, 0, 0, 0.5);
-}
 html,body{
 	height: 100%;
 	width: 100%;
-	font-size: 100%;
 	line-height: 1;
 	font-size: 14px;
 	-ms-text-size-adjust: 100%;
@@ -44,7 +29,7 @@ button::-moz-focus-inner {padding:0;border:0;}
 a, a:visited{text-decoration: none;}
 a:hover{text-decoration: none;}
 ul li{list-style: none;}
-img{vertical-align: top;}
+img{cursor: pointer;vertical-align: top;}
 
 h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight: 400;}
 .wraper{
@@ -76,12 +61,32 @@ src: url("../fonts/gilroy-medium.woff2") format("truetype");
 font-style: medium; 
 font-weight: medium; 
 }
-.main__container{
-	padding-top: 40px;
+
+.scroll-lock{
+	overflow: hidden;
+}
+.zoom-img{
+    position: absolute;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    padding: 5%;
+    background: rgba(0, 0, 0, 0.5);
 }
 .header__container {
 	justify-content: space-between;
 }
+
+
+
+
+
+
+
+.main__container{
+	padding-top: 40px;
+}
+
 h1{
 	font-family: 'Gilroy-Bold';
 	font-size: 3.25rem;
@@ -125,17 +130,17 @@ line-height: 122%;
 color: #070707;
 word-wrap: break-word;
 }
-.main__rueng{
+.languages{
 cursor: pointer;
 font-family: 'Gilroy-Bold';
 font-size: 16px;
 line-height: 125%;
 transform: rotate(-90deg) translate(0,25px);
 }
-.main__rueng a{
+.languages a{
 	color: #828282;
 }
-.main__rueng a:hover{
+.languages a:hover{
 	color: #070707;
 	-webkit-transition: all 1s ease;
 	transition: all 1s ease;
@@ -153,33 +158,33 @@ transform: rotate(-90deg) translate(0,25px);
 	color: #070707;
 }
 .main__mainphoto{
-	padding: 50px 0 100px 0;
+	padding: 50px 0 100px;
 
 }
 .about{
 	background-color: #F6F6F6;
 }
 .about__headder {
-padding: 120px 0 0 0;
+padding-top: 120px;
 }
 .about__text {
-padding: 20px 0 100px 0;
+padding: 20px 0 100px;
 display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
 	max-width: 420px;
 }
-.about__txt:not(:first-child){
-padding: 35px 0 0 0;
+.about__string:not(:first-child){
+padding-top: 35px;
 }
-.about__txt{
+.about__string{
 	text-align: center;
 }
 
 
 .skills__headder {
-padding: 90px 0 0 0;
+padding-top: 90px;
 }
 .skills__text {
 	font-family: 'Gilroy-Medium';
@@ -201,7 +206,7 @@ display: flex;
 gap: 0.5rem;
 }
 .skills__programms {
-	padding: 90px 0 110px 0;
+	padding: 90px 0 110px;
 	display: flex;
 	justify-content: space-between;
 	flex-wrap: wrap;
@@ -228,14 +233,14 @@ gap: 0.5rem;
 }
 
 .portfolio__headder {
-padding: 110px 0 50px 0;
+padding: 110px 0 50px;
 }
 
 
 .portfolio{
 background-color: #F6F6F6;
 }
-h2{
+h3{
 font-family: 'Gilroy-Bold';
 font-size: 34px;
 line-height: 42px;
@@ -249,10 +254,10 @@ line-height: 22px;
 text-align: center;
 text-decoration-line: underline;
 color: #070707;
-padding: 50px 0 100px 0;
+padding: 50px 0 100px;
 }
 .footer__contacts {
-padding: 0 0 20px 0;
+padding: 0 0 20px;
 }
 .header__menu-burger{
 	display: none;
@@ -265,7 +270,7 @@ padding: 0 0 20px 0;
 	align-items: center;
 	flex-direction: column;
 	gap: 1rem;
-padding: 1.25rem 0 2.5rem 0;
+padding: 1.25rem 0 2.5rem;
 max-width: 370px;
 }
 .footer__button{
@@ -276,7 +281,7 @@ line-height: 22px;
 background-color: #070707;
 text-align: center;
 padding: 1rem 2rem;
-margin: 0 0 5.5rem 0;
+margin-bottom: 5.5rem;
 }
 .footer__button a{
 	color: #FFFFFF;
@@ -291,7 +296,7 @@ margin: 0 0 5.5rem 0;
 	align-items: center;
 	justify-content: space-between;
 	flex-wrap: wrap;
-	padding: 0 0 3rem 0;
+	padding-bottom: 3rem;
 	width: 300px;
 }
 
@@ -307,7 +312,7 @@ color: #828282;
 	.main__mainphoto{
 		width: 100%;
 	}
-		  #main__rueng{
+		  .main__languages{
 			display: none;
 			  }
 	.main__info {
@@ -315,7 +320,7 @@ color: #828282;
 		align-items: start;
 		gap: 2rem;
 	}
-	.main__rueng{
+	.languages{
 		font-family: 'Gilroy-Bold';
 		font-size: 2rem;
 	}
@@ -334,9 +339,6 @@ color: #828282;
 	gap: 4rem;
 	justify-content: start;
 	align-items: start;
-}
-
-.menu-list {
 	top: 0;
 	transform: translateY(-110%);
 	position: absolute;
@@ -356,7 +358,7 @@ color: #828282;
 font-size: 2rem;
   }
 }
-#main__rueng-mobile{
+.header__languages{
 	display: none;
 }
 @media (max-width: 767.98px)  and (min-width: 479.98px)  {
@@ -385,7 +387,6 @@ grid-template-columns: 1fr 1fr;
 	position: relative;
 	z-index: 1;
 	cursor: pointer;
-	position: relative;
 	border: none;
 	background: transparent;
 	width: 40px;
@@ -465,7 +466,7 @@ grid-template-columns: 1fr 1fr;
   .burger-checkbox:checked ~ .burger {
 top: 4.5rem;
   }
-  .burger-checkbox:checked ~ #main__rueng-mobile{
+  .burger-checkbox:checked ~ .header__languages{
 	display: inline;
 	position: absolute;
 right: 1rem;
