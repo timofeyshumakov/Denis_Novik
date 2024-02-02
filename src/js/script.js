@@ -9,6 +9,17 @@ let img = document.querySelectorAll('.img-to-zoom');
 img.forEach(item => {
     item.addEventListener('click', imgClickHandler)
 })
+
+}
+
+let links = document.querySelectorAll('.menu-item > a');
+links.forEach(item => {
+    item.addEventListener('click', linkClickHandler)
+})
+function linkClickHandler(){
+    document.getElementById(this.getAttribute('data-link')).scrollIntoView({behavior: "smooth" });
+}
+}
 function imgClickHandler(){
     document.getElementById('body').classList.toggle('scroll-lock');
     this.classList.toggle('zoom-img');
@@ -28,14 +39,4 @@ function imgClickHandler(){
         imgClick--;
         this.removeAttribute("style");
     }
-}
-}
-
-let links = document.querySelectorAll('.menu-item > a');
-links.forEach(item => {
-    item.addEventListener('click', linkClickHandler)
-})
-function linkClickHandler(){
-    document.getElementById(this.getAttribute('data-link')).scrollIntoView({behavior: "smooth" });
-}
 }
