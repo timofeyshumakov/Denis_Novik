@@ -1,0 +1,1 @@
+window.onload=function(){function t(){document.getElementById(this.getAttribute("data-link")).scrollIntoView({behavior:"smooth"})}document.querySelectorAll(".menu-item > a").forEach(e=>{e.addEventListener("click",t)})};
