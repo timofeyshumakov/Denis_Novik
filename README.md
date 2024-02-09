@@ -1,1 +1,1 @@
-[# Denis_Novik_web_portfolio](https://www.codefactor.io/repository/github/timofeyshumakov/denis_novik/badge)https://www.codefactor.io/repository/github/timofeyshumakov/denis_novik/badge
+<a href="https://www.codefactor.io/repository/github/timofeyshumakov/Denis_Novik"><img src="https://www.codefactor.io/repository/github/timofeyshumakov/Denis_Novik/badge" alt="CodeFactor" /></a>
