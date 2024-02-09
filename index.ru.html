@@ -20,24 +20,24 @@
 				<label for="burger-checkbox" class="burger" aria-label="Открыть меню" tabindex="0"></label>
 				<div class="header__languages languages" id="header-languages" aria-label="Сменить язык" tabindex="0">
 					<span class="ru active-lang" aria-label="Сменить язык на русский" tabindex="0">RU</span>
-					<span class="lang-delimiter"> | </span>
+					<span class="lang-delimiter">&nbsp;|&nbsp;</span>
 					<span class="en" aria-label="Сменить язык на английский" tabindex="0"><a href="index.html">ENG</a></span>
 				</div>
 				<ul class="menu-list">
 					<li class="menu-item">
-						<a data-link="home" class="menu-link" tabindex="0" aria-label="Перейти на главную" href="#">Главная</a>
+						<a class="menu-link" tabindex="0" aria-label="Перейти на главную" href="#home">Главная</a>
 					</li>
 					<li class="menu-item">
-						<a data-link="about" class="menu-link" tabindex="0" aria-label="Перейти к информации обо мне" href="#">Обо мне</a>
+						<a class="menu-link" tabindex="0" aria-label="Перейти к информации обо мне" href="#about">Обо мне</a>
 					</li>
 					<li class="menu-item">
-						<a data-link="skills" class="menu-link" tabindex="0" aria-label="Перейти на раздел навыков" href="#">Навыки</a>
+						<a class="menu-link" tabindex="0" aria-label="Перейти на раздел навыков" href="#skills">Навыки</a>
 					</li>
 					<li class="menu-item">
-						<a data-link="portfolio" class="menu-link" tabindex="0" aria-label="Перейти к портфолио" href="#">Портфолио</a>
+						<a class="menu-link" tabindex="0" aria-label="Перейти к портфолио" href="#portfolio">Портфолио</a>
 					</li>
 					<li class="menu-item">
-						<a data-link="contacts" class="menu-link" tabindex="0" aria-label="Перейти к контактам" href="#">Контакты</a>
+						<a class="menu-link" tabindex="0" aria-label="Перейти к контактам" href="#contacts">Контакты</a>
 					</li>
 				</ul>
 			</nav>
@@ -45,18 +45,18 @@
 		</div>
     </header>
     <main class="main">
-    	<section class="main">
-			<div class="main__container">
-				<div class="main__info">
-					<h1 class="main__header" id="home" tabindex="0"><span>Денис</span><br><span>Новик</span></h1>
-					<h2 class="main__text" tabindex="0"><span>UX | UI дизайнер</span><br><span>24 года, Минск</span></h2>
-					<div class="main__languages languages" id="main-languages" aria-label="Сменить язык" tabindex="0">
+    	<section class="home" id="home">
+			<div class="home__container">
+				<div class="home__info">
+					<h1 class="home__header" id="home" tabindex="0"><span>Денис</span><br><span>Новик</span></h1>
+					<h2 class="home__text" tabindex="0"><span>UX | UI дизайнер</span><br><span>24 года, Минск</span></h2>
+					<div class="home__languages languages" aria-label="Сменить язык" tabindex="0">
 						<span class="ru active-lang" aria-label="Сменить язык на русский" tabindex="0">RU</span>
-						<span class="lang-delimiter"> | </span>
+						<span class="lang-delimiter">&nbsp;|&nbsp;</span>
 						<span class="en" aria-label="Сменить язык на английский" tabindex="0"><a href="index.html">ENG</a></span>
 					</div>
 				</div>
-				<div class="main__main-photo">
+				<div class="home__main-photo">
 					<picture>
 						<source media="(max-width: 768.98px)" srcset="assets/img/main-photo/main-photo-mobile.webp" type="image/webp">
 						<source srcset="assets/img/main-photo/main-photo.webp" type="image/webp">
@@ -238,6 +238,5 @@
 		</div>
 	</footer>
 </div>
-<script src="assets/js/script.js"></script>
 </body>
 </html>
