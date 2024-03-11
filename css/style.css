@@ -288,6 +288,10 @@ top: 4.5rem;
 	width: 100%;
 	padding: 2rem 0 2.5rem;
 }
+.home__main-photo img{
+	width: 100%;
+	height: 23.2rem;
+}
 /*#about*/
 .about__container{
 	gap: 2.5rem;
@@ -360,6 +364,10 @@ top: 4.5rem;
 .portfolio{
 	background-color: #F6F6F6;
 }
+.portfolio__photo{
+	width: 100%;
+	height: 31.3rem;
+}
 .portfolio__text {
 	font-size: 1.2rem;
 	line-height: 1.5rem;
@@ -421,10 +429,8 @@ top: 4.5rem;
 	.home__container{
 		padding: 0 1rem;
 	}
-	.home__home-photo{
-		justify-content: center;
-		display: flex;
-		width: 100%;
+	.home__main-photo img {
+		height: 100%;
 	}
 	.about__paragraph{
 		display: block;	
